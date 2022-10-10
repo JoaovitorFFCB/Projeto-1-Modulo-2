@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador Plus Ultra</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="header">
+        <h1>Criptografia.RAIZ</h1>
+    </header>
+
+    <main id="main">
+        <fieldset>
+            <div id="area-esq">
+                <textarea name="text-in" id="text-in" cols="60" rows="15" placeholder="Digite aqui o texto a ser criptografado ou descriptogrado sem acentuação! Por exemplo, não digite: Hoje é sexta-feira! E sim digite: Hoje e sexta-feira! Outras instruções: Para Criptografar ou Descriptografar use um dobleclick no botão de Criptografar ou Descriptografar."></textarea><br>
+                
+                <div id="btn-control">
+                    <label for="">Tipo de Criptografia:</label>
+                    <select name="select" id="select" onchange='mudarSelect()'>
+                        <option id="cesar" value="cesar">Cifra de Cesar</option>
+                        <option id="base64" value="base64" selected>Base64</option>
+                    </select> <br><br>
+                    
+                    <div id="incremento" class="hide">
+                        <label for="">Incremento:</label>
+                        <input type="number" id="number" required><br><br>
+                    </div>
+    
+                    <label for="">Função:</label>
+                    <input type="radio" name="funcao" id="cript" value="cript" checked onclick="changeBtn(1)">
+                    <label for="cript" onclick="changeBtn(1)">Criptografar</label>
+                    <input type="radio" name="funcao" id="dcript" value="dcript" onclick="changeBtn(2)">
+                    <label for="dcript" onclick="changeBtn(2)">Descriptografar</label> 
+                </div><br>
+    
+                <div id="btn-crip">
+                    <button id="btnCrip">Criptografar</button>
+                </div>
+    
+                <div id="btn-descrip">
+                    <button id="btnDcrip">Descritografar</button>
+                </div>
+            </div>
+
+            <div id="area-dir">
+                <textarea name="text-out" id="text-out" cols="60" rows="15"></textarea>
+            </div>
+
+            <div id="clear"></div>
+
+
+        </fieldset>
+    </main>
+
+    <footer id="footer">
+        &copy; Todos os direitos reservados 
+        <p>Desenvolvido por: João Vitor de Sousa de Lima</p> 
+    </footer>
+
+    <script src="script.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+    color: #04D939;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: #012E40;
+}
+
+/*CSS - Header*/
+
+#header{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #04D939;
+    background: #011526;
+}
+
+#header h1{
+    font-family: cursive;
+    background: inherit;
+    font-size: 3rem;
+}
+
+/*FIM CSS - Header*/
+
+/*CSS - Main*/
+
+#main{
+    margin: 1rem auto;
+    width: 98%;
+    background: #025959;
+}
+
+#area-esq{
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#number{
+    width: 50px;
+}
+
+#btn-descrip{
+    display: none;
+}
+
+#btn-crip button{
+    width: 100%;
+}
+
+#btn-descrip button{
+    width: 100%;
+}
+
+#text-in{
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    border: 1px solid #04D939;
+    border-radius: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+#area-dir{
+    float: right;
+    width: 50%;
+    padding: 1rem;
+}
+
+#text-out{
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    border: 1px solid #04D939;
+    border-radius: 2rem;
+}
+
+
+#clear{
+    clear: both;
+}
+
+button{
+    border: 2px solid #04D939;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/*FIM CSS - Main*/
+
+/*CSS - Footer*/
+
+#footer{
+    font-size: 1.3rem;
+    text-align: center;
+    border: 4px solid #04D939;
+    background: #011526;
+    padding: 1rem;
+}
+
+#footer p{
+    background: inherit;
+}
+
+/*FIM CSS - Footer*/
